@@ -1,0 +1,61 @@
+<div class="news">
+    <div class="container">
+        <div class="news-search d-flex">
+            <div class="news-head">
+                <h2 class="heading">Haberler</h2>
+            </div>
+            <div class="search-filter">
+                <div class="search-filter">
+                    <div class="search-form d-inline-block">
+                        <div class="d-flex">
+                            <input type="text" [(ngModel)]="filterText" class="form-control" id="filterText"
+                                placeholder="Haber ara...">
+                            <button type="submit" class="btn btn-secondary "><img class="icon-search"
+                                    src="../../../assets/img/search.svg" alt=""></button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div *ngIf="filterText.length>1" class="alert alert-success">
+            {{filterText}} aradınız.
+        </div>
+        <div class="row">
+
+            <div class="col-md-6"
+                *ngFor="let newsArticle of news | paginate:{ itemsPerPage:perPage , currentPage: page, totalItems: totalResults} | filterPipe:filterText ">
+                <div class="new d-flex ">
+                    <div class="news-img">
+                        <img [src]="newsArticle.urlToImage" alt="">
+                    </div>
+                    <div class="contents">
+                        <div class="news-content-desc">
+                            <a class="news-heading">
+                            </a> {{newsArticle.title }}
+                            <p class="content">{{newsArticle.description | slice:0:100 }}... <span><a target="_blank"
+                                        href="{{newsArticle.url}}">Daha fazla</a> </span>
+                            </p>
+                        </div>
+                        <div class="news-content-info">
+                            <span class="author"><a>{{newsArticle.author}}</a></span> <br>
+                            <span class="date-read">{{newsArticle.publishedAt | date}}</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="pagination" *ngIf="!filterText">
+            <pagination-controls (pageChange)="pageChangeEvent($event)"></pagination-controls>
+
+        </div>
+
+
+    </div>
+</div>

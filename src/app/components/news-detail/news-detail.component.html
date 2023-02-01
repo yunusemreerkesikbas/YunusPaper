@@ -1,0 +1,43 @@
+<div class="news-detail-component d-flex">
+    <app-category></app-category>
+    <div class="container">
+        <div class="news news-detail">
+            <div class="category-title">
+                <h2 class="category-heading"></h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12" *ngFor="let newsArticle of news ">
+
+                    <div class="new d-flex">
+                        <div class="col-md-4">
+                            <div class="news-img">
+                                <img [src]="newsArticle.urlToImage" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="contents">
+                                <a class="news-heading" target="_blank" href="{{newsArticle.url}}">
+                                    {{newsArticle.title}}
+                                </a>
+
+                                <p class="content">{{newsArticle.description}}</p>
+                                <span class="author"><a>{{newsArticle.author}}</a></span> <br>
+                                <span class="date-read">{{newsArticle.publishedAt | date}}</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+</div>

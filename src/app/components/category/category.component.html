@@ -1,0 +1,18 @@
+<div class="category-component">
+
+    <div class="category-sidebar ">
+        <ul>
+
+            <li [class]="getAllCategoryClass()">
+                <a routerLink="/category/all-categories">All Categories</a>
+            </li>
+            <li [class]="getCurrentCategoryClass(category)" *ngFor="let category of uniqueCategory">
+                <a (click)="setCurrentCategory(category)"
+                    routerLink="/category/{{category.category}}">{{category.category}}</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
