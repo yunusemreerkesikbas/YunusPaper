@@ -1,10 +1,10 @@
 # YunusPaper
 
-This site is made for [enoca](https://www.enoca.com/).
-This site was created using [newsapi](https://newsapi.org/).
-In order to get the project up and running, you need to get an `API Key` from the newsapi site..
-Then, in `environments.ts` you have to define the api key you get in `XApiKey`.
-Install the required npm packages and the site is now ready.
+This site is made for [enoca](https://www.enoca.com/).</br>
+This site was created using [newsapi](https://newsapi.org/).</br>
+In order to get the project up and running, you need to get an `API Key` from the newsapi site.</br>
+Then, in `environments.ts` you have to define the api key you get in `XApiKey`.</br>
+Install the required npm packages and the site is now ready.</br>
 
 live server: [enocaChallenge](https://enocachallenge.vercel.app/)
 
