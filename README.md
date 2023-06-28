@@ -1,35 +1,77 @@
-# YunusPaper
+# YunusPaper - News Aggregator Website
 
 This site is made for [enoca](https://www.enoca.com/).</br>
-This site was created using [newsapi](https://newsapi.org/).</br>
-In order to get the project up and running, you need to get an `API Key` from the newsapi site.</br>
-Then, in `environments.ts` you have to define the api key you get in `XApiKey`.</br>
-Install the required npm packages and the site is now ready.</br>
+YunusPaper is a news aggregator website developed using Angular. It was created for Enoca Company to showcase news articles retrieved from the NewsAPI. The website utilizes the API data to perform various operations and displays news articles on the homepage based on different categories. Pagination functionality is implemented to allow users to navigate through the articles easily.
 
-live server: [enocaChallenge](https://enocachallenge.vercel.app/)
+live server: [enoca challenge](https://enocachallenge.vercel.app/)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
+### Table of Contents
 
-## Development server
+- Introduction
+- Features
+- Installation
+- Usage
+- Contributing
+- License
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Introduction
 
-## Code scaffolding
+YunusPaper serves as a platform for Enoca Company to aggregate and display news articles sourced from the NewsAPI. The website is built using Angular and provides an intuitive user interface for browsing and exploring news articles. It offers a range of features to enhance the user experience, including category-based article filtering and pagination.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Features
 
-## Build
+YunusPaper offers the following features:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- News Aggregation: Retrieve news articles from the NewsAPI.
+- Category Filtering: Display news articles based on different categories.
+- Pagination: Allow users to navigate through articles using pagination.
+- Responsive Design: Ensure optimal viewing experience across devices.
+- Search Functionality: Enable users to search for specific articles.
+- Article Detail View: Provide a dedicated page to view complete article details.
+- External Links: Direct users to the original source of each news article.
 
-## Running unit tests
+### Installation
+To install and set up YunusPaper, follow these steps:
+1. Clone the repository using the command:  
+```
+git clone https://github.com/yunusemreerkesikbas/YunusPaper.git
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Navigate to the project directory:
+```
+cd YunusPaper
+```
+3. Install the project dependencies:
+```
+npm install
+```
+4. Configure the NewsAPI key in the src/environments/environment.ts file.
+5. Start the development server:
+```
+ng serve
+```
+6. Access the website by visiting http://localhost:4200 in your web browser.
 
-## Running end-to-end tests
+### Usage
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Once YunusPaper is up and running, users can access the website to explore and read news articles. Here are some common usage scenarios:
 
-## Further help
+- Homepage: The homepage displays a collection of news articles fetched from the NewsAPI. Users can browse through the articles and click on any article to view more details.
+- Category Filtering: Users can select a specific category from the navigation menu to filter articles based on their interests.
+- Pagination: When there are multiple pages of articles, users can navigate through them using the pagination controls at the bottom of the page.
+- Search Functionality: Users can use the search feature to find articles related to specific keywords or topics.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+For detailed instructions on how to use YunusPaper, please refer to the user documentation provided.
+
+### Contributing
+
+Contributions to the YunusPaper project are welcome! If you encounter any issues or have suggestions for improvements, please open an issue on the GitHub repository.
+
+If you would like to contribute code, please follow these steps:
+
+- Fork the repository and create a new branch for your contribution.
+- Make your changes and ensure that the code adheres to the project's coding standards.
+- Test your changes thoroughly.
+- Submit a pull request detailing the changes you have made.
+
+Thank you for your interest in YunusPaper. If you have any questions or need further assistance, please don't hesitate to contact us.
