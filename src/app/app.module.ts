@@ -19,7 +19,7 @@ import {NgOptimizedImage} from "@angular/common";
 import {SearchComponent} from "@components/search/search.component";
 import {NewsCardComponent} from "@components/news-card/news-card.component";
 import {NavbarComponent} from "@components/navbar/navbar.component";
-import { LoadingComponent } from './components/loading/loading.component';
+import {LoadingComponent} from "@components/loading/loading.component";
 
 @NgModule({
   declarations: [

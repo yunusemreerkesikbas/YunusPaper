@@ -13,10 +13,8 @@ export class NewsService {
   constructor(private httpClient: HttpClient) { }
   // apiden gelen datayı karşıla
   getNews(): Observable<ListResponseModel<News>> {
-    this.isLoading = true
     let apiUrl = `${environment.ApiBaseUrl}top-headlines?country=${environment.country}&apiKey=${environment.XApiKey}`
     return this.httpClient.get<ListResponseModel<News>>(apiUrl);
-    this.isLoading = false
   }
 
 
