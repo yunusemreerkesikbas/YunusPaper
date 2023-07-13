@@ -1,0 +1,25 @@
+<div class="search-filter">
+  <div class="search-filter">
+    <div class="search-form d-inline-block">
+      <div class="d-flex">
+        <input
+          type="text"
+          [(ngModel)]="filterText"
+          (input)="onFilterTextChange()"
+          class="form-control"
+          id="filterText"
+          placeholder="Haber ara..."
+        />
+        <button type="submit" class="btn btn-secondary">
+          <img
+            class="icon-search"
+            ngSrc="/assets/img/search.svg"
+            alt=""
+            height="30"
+            width="30"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

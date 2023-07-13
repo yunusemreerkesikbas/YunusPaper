@@ -1,0 +1,27 @@
+<a class="new d-flex" target="_blank" href="{{ item.url }}">
+  <div class="news-img">
+    <img [ngSrc]="item.urlToImage" [width]="width" [height]="height"  alt="" />
+  </div>
+  <div class="contents">
+    <div class="news-content-desc">
+      <a class="news-heading"> </a> {{ item.title }}
+      <p class="content">
+        {{ item.content | slice : 0 : sliceEnd }}...
+        <span
+        ><a
+        >Daha fazla</a
+        >
+                </span>
+      </p>
+    </div>
+    <div class="news-content-info">
+              <span class="author"
+              ><a>{{ item.author }}</a></span
+              >
+      <br />
+      <span class="date-read">{{
+        item.publishedAt | date
+        }}</span>
+    </div>
+  </div>
+</a>

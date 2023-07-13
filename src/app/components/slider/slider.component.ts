@@ -1,6 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {News} from "@models/newsModel";
-import {NewsService} from "@services/news.service";
 
 @Component({
   selector: 'app-slider',

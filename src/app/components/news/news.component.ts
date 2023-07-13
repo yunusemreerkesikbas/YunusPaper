@@ -1,6 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { News } from "@models/newsModel";
-import { PaginationNewsService } from "@services/pagination.service";
 
 @Component({
   selector: 'app-news',
