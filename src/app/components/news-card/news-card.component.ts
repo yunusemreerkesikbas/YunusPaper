@@ -16,4 +16,7 @@ export class NewsCardComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+  handleImageError(event: any) {
+    event.target.src = '/assets/img/default_news.jpg';
+  }
 }

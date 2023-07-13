@@ -1,6 +1,6 @@
 <a class="new d-flex" target="_blank" href="{{ item.url }}">
   <div class="news-img">
-    <img [ngSrc]="item.urlToImage" [width]="width" [height]="height"  alt="" />
+    <img [ngSrc]="item.urlToImage" [width]="width" [height]="height" (error)="handleImageError($event)" alt="" />
   </div>
   <div class="contents">
     <div class="news-content-desc">

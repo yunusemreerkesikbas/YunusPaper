@@ -1,18 +1,12 @@
 <div class="category-component">
-
-    <div class="category-sidebar ">
-        <ul>
-
-            <li [class]="getAllCategoryClass()">
-                <a routerLink="/category/all-categories">All Categories</a>
-            </li>
-            <li [class]="getCurrentCategoryClass(unique)" *ngFor="let unique of uniqueCategory">
-                <a (click)="setCurrentCategory(unique)"
-                    routerLink="/category/{{unique.category}}">{{unique.category}}</a>
-            </li>
-
-        </ul>
-
-    </div>
-
+  <div class="category-sidebar sticky-top">
+    <ul class="flex-column">
+      <li [class]="getAllCategoryClass()">
+        <a class="nav-link" routerLink="/category/all-categories">All Categories</a>
+      </li>
+      <li [class]="getCurrentCategoryClass(unique)" *ngFor="let unique of uniqueCategory">
+        <a class="nav-link" (click)="setCurrentCategory(unique)" routerLink="/category/{{unique.category}}">{{unique.category}}</a>
+      </li>
+    </ul>
+  </div>
 </div>
