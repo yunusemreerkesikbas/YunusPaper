@@ -14,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 0px 0px 15px 24px;
+  padding: 0 0 15px 24px;
 }
 
 .contents .content {

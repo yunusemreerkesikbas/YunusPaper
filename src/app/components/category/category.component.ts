@@ -1,8 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { Category } from '@models/categoryModel';
-import { CategoryService } from '@services/category.service';
 
 @Component({
   selector: 'app-category',
