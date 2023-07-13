@@ -3,7 +3,7 @@
 This site is made for [enoca](https://www.enoca.com/).</br>
 YunusPaper is a news aggregator website developed using Angular. It was created for Enoca Company to showcase news articles retrieved from the NewsAPI. The website utilizes the API data to perform various operations and displays news articles on the homepage based on different categories. Pagination functionality is implemented to allow users to navigate through the articles easily.
 
-live server: [enoca challenge](https://enocachallenge.vercel.app/)
+live server: [Yunus Paper](https://enocachallenge.vercel.app/)
 
 ### Table of Contents
 
