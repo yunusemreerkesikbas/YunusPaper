@@ -15,6 +15,7 @@ export class NewsDetailComponent implements OnInit {
   categories: Category[] = []
   uniqueCategory: any = []
   categoryList: Category[] = []
+  isLoading = false
   constructor(
     private newsService: NewsService,
     private categoryService: CategoryService,
@@ -35,16 +36,21 @@ export class NewsDetailComponent implements OnInit {
   }
   // tüm haberleri getir
   getNews() {
+    this.isLoading = true
     this.newsService.getNews().subscribe((response) => {
       this.news = response.articles
-      console.log(this.news)
+      this.isLoading=false
 
     })
   }
   // kategoriye göre haber getir
   getNewsByCategory(category: string) {
+    this.isLoading = true
+
     this.categoryService.getNewsByCategory(category).subscribe(response => {
       this.news = response.articles
+      this.isLoading = false
+
     })
   }
 

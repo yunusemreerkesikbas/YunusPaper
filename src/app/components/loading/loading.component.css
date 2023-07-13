@@ -1,0 +1,22 @@
+/* loading.component.css */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Arkaplanın opacity'si */
+  z-index: 9999; /* Yüksek bir z-index değeri ile diğer elementlerin üstünde olmasını sağlar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-content {
+  text-align: center;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+}

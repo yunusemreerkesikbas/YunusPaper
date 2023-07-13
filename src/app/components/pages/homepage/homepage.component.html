@@ -1,4 +1,5 @@
-  <div class="container">
+<app-loading [isLoading]="isLoading"></app-loading>
+<div class="container">
     <app-slider [news]="topNews"></app-slider>
     <app-news [news]="news" [page]="page" [perPage]="perPage" [totalResults]="totalResults"
               (pageChangeEvent)="pageChangeEvent($event)"></app-news>

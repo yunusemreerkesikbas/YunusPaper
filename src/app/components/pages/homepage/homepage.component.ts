@@ -16,22 +16,28 @@ export class HomepageComponent implements OnInit {
   perPage: number = 10
   totalResults: number = 0
   page: number = 1
+  isLoading = false
+
   constructor(private newsService: NewsService, private paginationNewsService: PaginationNewsService) { }
   ngOnInit(): void {
     this.getTopNews();
     this.getNewsByPagination()
   }
   getTopNews() {
+    this.isLoading = true;
     this.newsService.getNews().subscribe((response) => {
       this.topNews = response.articles
-      console.log(this.topNews)
+      this.isLoading = false;
+
     })
   }
 
   getNewsByPagination() {
+    this.isLoading = true;
     this.paginationNewsService.getNewsByPagination(this.page, this.perPage).subscribe((response) => {
       this.news = response.articles
       this.totalResults = response.totalResults
+      this.isLoading = false
     })
   }
   pageChangeEvent(event: number) {
