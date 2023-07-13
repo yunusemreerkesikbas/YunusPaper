@@ -1,5 +1,5 @@
 import { Category } from "./categoryModel";
-import { CategoryResponseModel } from "./categoryResponseModel";
+import {CategoryResponseModel} from "@models/categoryResponseModel";
 
 export interface CategoryListResponseModel extends CategoryResponseModel {
     sources: Category[]

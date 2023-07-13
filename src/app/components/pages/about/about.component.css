@@ -1,0 +1,165 @@
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 30px 0;
+  padding: 50px 0;
+}
+.about-text .text-box h1 {
+  font-size: 50px;
+}
+.about-text .text-box h3 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+.about-text .text-box .description {
+  font-size: 17px;
+  line-height: 25px;
+  margin: 10px 0;
+  color: gray;
+}
+.download-cv button {
+  color: #fff;
+  padding: 15px;
+  border-radius: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  box-shadow: rgb(97 97 157 / 20%) 0px 7px 29px 0px;
+  background: #8bc34a;
+}
+.download-cv button:hover {
+  background: #fff;
+  color: #8bc34a;
+  transition: 0.5s all ease-in;
+}
+.skills-title {
+  text-align: center;
+}
+
+.skills-title h1 {
+  margin: 60px 0;
+  letter-spacing: 10px;
+  font-size: 40px;
+}
+
+.skill-list {
+  padding: 0;
+  overflow: hidden;
+}
+
+.skill-list:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.skill-list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: 20%;
+  margin-left: -2px;
+  margin-bottom: -2px;
+  border-width: 0 0 1px 1px;
+  border-style: solid;
+  border-color: #aaa;
+  filter: brightness(0.5);
+  transition: filter 0.3s ease 0s;
+}
+
+.skill-list li a i {
+  transition: transform 1s ease 0s;
+}
+
+.skill-list li:hover {
+  filter: brightness(1);
+}
+
+.skill-list li a i:hover {
+  transform: scale(1.1);
+}
+
+.skill-list li:before {
+  display: block;
+  content: "";
+  padding-bottom: 100%;
+}
+
+.skill-list li a {
+  display: flex;
+}
+
+.skill-list li a img {
+  width: 100px;
+  height: 100px;
+}
+
+.heading {
+  margin: 70px 0;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px 50px 20px 20px;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  height: 300px;
+}
+
+.projects .project-title {
+  margin-bottom: 10px;
+}
+.projects .project-title h4 {
+  font-size: 21px;
+  font-weight: bold;
+}
+.projects .project-desc {
+  margin-bottom: 22px;
+}
+.projects .project-desc p {
+  font-size: 17px;
+  line-height: 22px;
+  color: gray;
+}
+.projects .tech {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.projects .source span img {
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .about-text {
+    margin: 0;
+  }
+  .about-text .text-box .name {
+    font-size: 40px;
+  }
+  .about-text .text-box .job-status {
+    font-size: 23px;
+  }
+  .about-text .text-box .description {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 10px 0;
+    color: gray;
+  }
+  .skill-list li {
+    width: 50%;
+  }
+}

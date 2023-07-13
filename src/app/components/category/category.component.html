@@ -6,9 +6,9 @@
             <li [class]="getAllCategoryClass()">
                 <a routerLink="/category/all-categories">All Categories</a>
             </li>
-            <li [class]="getCurrentCategoryClass(category)" *ngFor="let category of uniqueCategory">
-                <a (click)="setCurrentCategory(category)"
-                    routerLink="/category/{{category.category}}">{{category.category}}</a>
+            <li [class]="getCurrentCategoryClass(unique)" *ngFor="let unique of uniqueCategory">
+                <a (click)="setCurrentCategory(unique)"
+                    routerLink="/category/{{unique.category}}">{{unique.category}}</a>
             </li>
 
         </ul>

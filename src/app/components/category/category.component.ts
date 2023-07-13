@@ -1,9 +1,8 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Category } from 'src/app/models/categoryModel';
-import { News } from 'src/app/models/newsModel';
-import { CategoryService } from 'src/app/services/category.service';
+import {Category} from "@models/categoryModel";
+import {CategoryService} from "@services/category.service";
 
 @Component({
   selector: 'app-category',
@@ -11,10 +10,10 @@ import { CategoryService } from 'src/app/services/category.service';
   styleUrls: ['./category.component.css']
 })
 export class CategoryComponent implements OnInit {
-  uniqueCategory: any = []
-  categories: Category[] = []
+  @Input() uniqueCategory: any = []
+  @Input() categoryList: Category[] = []
   currentCategory: Category
-  news: News[] = []
+
   constructor(
     private categoryService: CategoryService,
     private httpClient: HttpClient,
@@ -23,19 +22,7 @@ export class CategoryComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.getCategories();
   }
-  // apideki datadan gelen kategorilerden unique olanları aldık. apideki datada aynı kategoriden birçok geliyor bunu da new Set oluşturarak uniqueleştirdik
-  getCategories() {
-    this.categoryService.getCategories().subscribe(response => {
-      this.categories = response.sources
-      this.uniqueCategory = Array.from(new Set(this.categories.map(item => item.category))).map(category => {
-        return this.categories.find(item => item.category === category)
-      })
-
-    })
-  }
-
   setCurrentCategory(category: Category) {
     this.currentCategory = category;
   }
@@ -56,6 +43,7 @@ export class CategoryComponent implements OnInit {
       return "category-list-item"
     }
   }
+
 
 
 }

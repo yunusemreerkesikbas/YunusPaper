@@ -1,0 +1,38 @@
+{
+  "socialMediaLinks": [
+    {
+      "name": "Github",
+      "image": "/assets/img/github.svg",
+      "url": "https://github.com/yunusemreerkesikbas"
+    },
+    {
+      "name": "LinkedIn",
+      "image": "/assets/img/linkedin.svg",
+      "url": "https://www.linkedin.com/in/yunusemreerkesikbas/"
+    },
+    {
+      "name": "Instagram",
+      "image": "/assets/img/instagram.svg",
+      "url": "https://www.instagram.com/yunuseerkesikbas/"
+    },
+    {
+      "name": "Bitbucket",
+      "image": "/assets/img/bitbucket.svg",
+      "url": "https://bitbucket.org/yunusemreerkesikbas/"
+    }
+  ],
+  "navbarLinks": [
+    {
+      "name": "Ana Sayfa",
+      "url": "/"
+    },
+    {
+      "name": "Tüm Haberler",
+      "url": "/category/all-categories"
+    },
+    {
+      "name": "Hakkımda",
+      "url": "/about"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { SourceModel } from "./sourceModel"
+import {SourceModel} from "@models/sourceModel";
 
 export interface News {
     source: SourceModel

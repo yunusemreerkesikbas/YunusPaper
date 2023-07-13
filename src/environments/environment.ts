@@ -5,7 +5,9 @@
 export const environment = {
   production: false,
   XApiKey: 'e663f4b513ed418589e1a3b3167044da',
-  ApiBaseUrl: 'https://newsapi.org/v2/'
+  ApiBaseUrl: 'https://newsapi.org/v2/',
+  country: 'us',
+  language: 'en',
 };
 
 /*

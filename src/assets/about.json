@@ -1,0 +1,108 @@
+{
+  "name": "Yunus Emre Erkesikbaş",
+  "status": "Frontend Developer",
+  "description": "console.log(\"Hello World\")<br>\nBen Yunus, Samsun Ondokuz Mayıs Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. Web\ndevelopment alanında başladığım yazılıma, ağırlıklı olarak Frontend alanında çalışarak\ndevam ediyorum. Genel olarak Javascript ile çalışıyorum ve framework olarak Angular\nkullanıyorum\nancak React da öğrenmek istiyorum. Bunun yanısıra Backend'de PHP ile CMS yaptım. İlk\nfreelance işimi <a style=\"color: rgb(70, 70, 232);\"\nhref=\"https://developer.hascakuruyemiskahve.com.tr/\">Hasça\nKuruyemiş & Kahve</a> adına\nyaptım ve bu siteye admin paneli ekledim. 2 farklı ajansta toplam 4 aylık deneyimim\noldu.Teoride öğrendiğim bilgileri, gerçek yaşamda da kullanarak kendimi geliştirmek\nistiyorum. Bu yüzden çalışabileceğim bir şirket arıyorum",
+  "skills": [
+    {
+      "name": "JavaScript",
+      "logoUrl": "/assets/img/js.svg",
+      "link": "https://www.javascript.com/"
+    },
+    {
+      "name": "Angular",
+      "logoUrl": "/assets/img/angular.svg",
+      "link": "https://angular.io/"
+    },
+    {
+      "name": "Python",
+      "logoUrl": "/assets/img/python.svg",
+      "link": "https://www.python.org/"
+    },
+    {
+      "name": "C",
+      "logoUrl": "/assets/img/c.svg",
+      "link": "https://www.cprogramming.com/"
+    },
+    {
+      "name": "PHP",
+      "logoUrl": "/assets/img/php.svg",
+      "link": "https://www.php.net/"
+    },
+    {
+      "name": "CodeIgniter",
+      "logoUrl": "/assets/img/codeigniter.svg",
+      "link": "https://codeigniter.com/"
+    },
+    {
+      "name": "Ruby",
+      "logoUrl": "/assets/img/ruby.svg",
+      "link": "https://www.ruby-lang.org/en/"
+    },
+    {
+      "name": "HTML",
+      "logoUrl": "/assets/img/html.svg",
+      "link": "https://www.w3schools.com/html/"
+    },
+    {
+      "name": "CSS",
+      "logoUrl": "/assets/img/css3.svg",
+      "link": "https://www.w3schools.com/css/"
+    },
+    {
+      "name": "SQL",
+      "logoUrl": "/assets/img/sql.svg",
+      "link": "https://themetorium.net/"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Ateşler Kimya",
+      "description": "Bu proje, Post Ajans adına yaz staj döneminde yapmış olduğum bir çalışma. Ateşler Kimya'ya\nait kurumsal bir website çalışması.Siteyi Angular ile kodladım",
+      "tech": ["TypeScript", "Angular", "HTML", "CSS"],
+      "sourceCodeUrl": "https://github.com/yunusemreerkesikbas/AteslerKimya",
+      "websiteUrl": "https://ateslerkimya.vercel.app/"
+    },
+    {
+      "title": "Hasça Kuruyemiş & Kahve",
+      "description": "Bu proje, Hasça Kuruyemiş & Kahve adına yapmış olduğum kurumsal website çalışmasıdır.Aynı\nzamanda aldığım ilk freelance iş. Siteye PHP ile admin paneli oluşturdum.Aynı zamanda\nfrontend arayüzüne de yardımcı oldum.",
+      "tech": ["PHP", "JavaScript", "HTML", "CSS"],
+      "sourceCodeUrl": "https://github.com/yunusemreerkesikbas/hasca",
+      "websiteUrl": "https://developer.hascakuruyemiskahve.com.tr/"
+    },
+    {
+      "title": "STU Website",
+      "description": "Freelance olarak aldığım bir iş. PSD olarak gelen tasarımı HTML - CSS olarak kodladım",
+      "tech": ["HTML", "CSS"],
+      "sourceCodeUrl": "https://github.com/yunusemreerkesikbas/StuWebsitePSDToHTML",
+      "websiteUrl": "https://stuwebsite.vercel.app/"
+    },
+    {
+      "title": "Saraylı Konakları",
+      "description": "Bu proje, staj döneminde Feel Medya adına yapmış olduğum bir website. PSD olarak gelen\ntasarımı HTML - CSS olarak kodladım",
+      "tech": ["HTML", "CSS"],
+      "sourceCodeUrl": "https://github.com/yunusemreerkesikbas/SarayliKonaklariPSDToHTML",
+      "websiteUrl": "https://saraylikonaklari.netlify.app/"
+    },
+    {
+      "title": "Github Profile App",
+      "description": "Kendimi geliştirmek adına yapmış olduğum Javascript projesidir. Bu projeyle girilen\nGitHub kullanıcı adına göre kullanıcıların profillerini, top 10 repo'larını ekranda\ngöstermektedir.GitHub API kullanılarak yapılmıştır.",
+      "tech": ["JavaScript", "HTML", "CSS"],
+      "sourceCodeUrl": "https://github.com/yunusemreerkesikbas/JavascriptBasicProject/tree/master/githubProfile",
+      "websiteUrl": "https://githubprofileapp.vercel.app/"
+    },
+    {
+      "title": "Password Generator App",
+      "description": "Kendimi geliştirmek adına yapmış olduğum bir Javascript projesidir. Bu projeyle istenilen\nözellikte şifreler oluşturulabilir",
+      "tech": ["JavaScript", "HTML", "CSS"],
+      "sourceCodeUrl": "https://github.com/yunusemreerkesikbas/JavascriptBasicProject/tree/master/passwordGenerator",
+      "websiteUrl": "https://passwordgenerator-ashen-two.vercel.app/"
+    },
+    {
+      "title": "E-commerce Website",
+      "description": "Kendimi geliştirmek adına yapmış olduğum bir sitedir.",
+      "tech": ["HTML", "CSS"],
+      "sourceCodeUrl": "https://github.com/yunusemreerkesikbas/WebsiteProjects/tree/master/e-commerceWebsite",
+      "websiteUrl": "https://carashop.vercel.app/"
+    }
+  ]
+}

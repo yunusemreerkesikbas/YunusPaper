@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { News } from '../models/newsModel';
+import {News} from "@models/newsModel";
 
 @Pipe({
   name: 'filterPipe'
@@ -12,4 +12,4 @@ export class FilterPipePipe implements PipeTransform {
     return filterText ? value.filter((p: News) => p.title.toLocaleLowerCase().indexOf(filterText) !== -1) : value;
   }
 
-} 
+}

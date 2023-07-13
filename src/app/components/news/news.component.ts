@@ -1,10 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { ListResponseModel } from 'src/app/models/listResponseModel';
-// import { initialNews } from 'src/app/models/initialNewsModel';
-import { News } from 'src/app/models/newsModel';
-import { NewsService } from 'src/app/services/news.service';
-import { HomepageComponent } from '../homepage/homepage.component';
-import { PaginationNewsService } from 'src/app/services/pagination.service';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { News } from "@models/newsModel";
+import { PaginationNewsService } from "@services/pagination.service";
 
 @Component({
   selector: 'app-news',
@@ -12,27 +8,25 @@ import { PaginationNewsService } from 'src/app/services/pagination.service';
   styleUrls: ['./news.component.css']
 })
 export class NewsComponent implements OnInit {
-  news: News[] = [];
-  filterText: string = "";
-  perPage: number = 10
-  totalResults: number = 0
-  page: number = 1
 
-  constructor(private paginationNewsService: PaginationNewsService, private homepage: HomepageComponent) { }
+  constructor() { }
+
+  @Output() pageChangeEvent: EventEmitter<number> = new EventEmitter<number>();
+  @Input() news: News[];
+  @Input() filterText: string = '';
+  @Input() perPage: number;
+  @Input() totalResults: number;
+  @Input() page: number;
+
+  onPageChange(event: number) {
+    this.pageChangeEvent.emit(event);
+  }
+
+  onFilterTextChange(filterText: string) {
+    this.filterText = filterText;
+  }
+
   ngOnInit(): void {
-    this.getNews();
-  }
-
-  getNews() {
-    this.paginationNewsService.getNewsByPagination(this.page, this.perPage).subscribe((response) => {
-      this.news = response.articles
-      this.totalResults = response.totalResults
-
-    })
-  }
-  pageChangeEvent(event: number) {
-    this.page = event;
-    this.getNews();
   }
 
 }

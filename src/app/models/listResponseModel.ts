@@ -1,5 +1,4 @@
-import { News } from "./newsModel";
-import { ResponseModel } from "./responseModel";
+import {ResponseModel} from "@models/responseModel";
 
 export interface ListResponseModel<T> extends ResponseModel {
     articles: T[]

@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Category } from 'src/app/models/categoryModel';
-import { News } from 'src/app/models/newsModel';
-import { CategoryService } from 'src/app/services/category.service';
-import { NewsService } from 'src/app/services/news.service';
+import {News} from "@models/newsModel";
+import {Category} from "@models/categoryModel";
+import {NewsService} from "@services/news.service";
+import {CategoryService} from "@services/category.service";
 
 @Component({
   selector: 'app-news-detail',
@@ -13,7 +13,8 @@ import { NewsService } from 'src/app/services/news.service';
 export class NewsDetailComponent implements OnInit {
   news: News[] = []
   categories: Category[] = []
-
+  uniqueCategory: any = []
+  categoryList: Category[] = []
   constructor(
     private newsService: NewsService,
     private categoryService: CategoryService,
@@ -21,6 +22,7 @@ export class NewsDetailComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.getCategories();
     // tıklanan kategoriye göre haber çekme
     this.activatedRoute.params.subscribe(params => {
       if (params["category"]) {
@@ -35,6 +37,7 @@ export class NewsDetailComponent implements OnInit {
   getNews() {
     this.newsService.getNews().subscribe((response) => {
       this.news = response.articles
+      console.log(this.news)
 
     })
   }
@@ -44,5 +47,17 @@ export class NewsDetailComponent implements OnInit {
       this.news = response.articles
     })
   }
+
+  getCategories() {
+    this.categoryService.getCategories().subscribe(response => {
+      this.categoryList = response.sources
+      this.uniqueCategory = Array.from(new Set(this.categoryList.map(item => item.category))).map(category => {
+        return this.categoryList.find(item => item.category === category)
+      })
+
+    })
+  }
+
+
 
 }

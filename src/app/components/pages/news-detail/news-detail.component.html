@@ -1,0 +1,22 @@
+<div class="news-detail-component d-flex">
+    <app-category [categoryList]="categoryList"  [uniqueCategory]="uniqueCategory"></app-category>
+    <div class="container">
+        <div class="news news-detail">
+            <div class="category-title">
+                <h2 class="category-heading"></h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12" *ngFor="let item of news ">
+<!--                  TODO: add newsCard-->
+                  <app-news-card [item]="item" [sliceEnd]="400" [width]="400" [height]="400" ></app-news-card>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</div>

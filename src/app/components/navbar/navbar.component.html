@@ -1,0 +1,37 @@
+<div class="site-wrap">
+  <header class="header-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="header d-flex">
+            <div class="logo">
+              <a routerLink="/">
+                <h1>Yunus Emre</h1>
+              </a>
+            </div>
+            <div class="navbar">
+              <div class="social-media">
+                <ul class="d-flex">
+                  <li *ngFor="let link of headerData.socialMediaLinks">
+                    <a target="_blank" [href]="link.url">
+                      <img class="sm-links" [ngSrc]="link.image" width="30" height="30" [alt]="link.name">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="header-navbar">
+            <ul>
+              <li class="header-link" *ngFor="let link of headerData.navbarLinks">
+                <a [routerLink]="link.url" routerLinkActive="active">{{ link.name }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>

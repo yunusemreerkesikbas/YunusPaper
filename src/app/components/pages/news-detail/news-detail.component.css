@@ -1,0 +1,13 @@
+.news .category-title {
+  margin-bottom: 30px;
+  font-family: "B612 Mono", monospace;
+}
+@media (max-width: 500px) {
+  .news-detail-component {
+    flex-direction: column;
+  }
+  .news-detail-component .category-component {
+    justify-content: center;
+    text-align: center;
+  }
+}

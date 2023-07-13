@@ -1,0 +1,72 @@
+<div class="site-wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="about-text">
+          <div class="text-box">
+            <h1 class="name">{{ aboutData.name }}</h1>
+            <h3 class="job-status">{{ aboutData.status }}</h3>
+            <p class="description" [innerHTML]="aboutData.description"></p>
+          </div>
+          <div class="download-cv">
+            <button>
+              <a target="_blank" href="/assets/cv-global.pdf" download>CV İNDİR</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="skill-section">
+          <div class="skill-section-inner ">
+            <div class="skills-title">
+              <h1>YETENEKLER</h1>
+            </div>
+            <ul class="skill-list">
+              <li *ngFor="let skill of aboutData.skills">
+                <a [href]="skill.link" class="cursor-alter" target="_blank" rel="noopener">
+                  <img [ngSrc]="skill.logoUrl" width="30" height="30" [alt]="skill.name">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h1 class="heading ">PORTFOLYO</h1>
+      <div class="col-md-6" *ngFor="let project of aboutData.projects">
+        <div class="projects">
+          <div class="project-content-desc">
+            <div class="project-title">
+              <h4>{{ project.title }}</h4>
+            </div>
+            <div class="project-desc">
+              <p>{{ project.description }}</p>
+            </div>
+          </div>
+          <div class="project-content-links">
+            <div class="tech">
+              <span *ngFor="let tech of project.tech">
+                <img [ngSrc]="'/assets/img/project_img/' + tech.toLowerCase() + '.svg'" width="50" height="50" [alt]="tech">
+              </span>
+            </div>
+            <div class="source">
+              <span>
+                <a target="_blank" [href]="project.sourceCodeUrl">
+                  <img ngSrc="/assets/img/project_img/github.svg" alt="Source Code" width="30" height="30" >
+                </a>
+              </span>
+              <span>
+                <a target="_blank" [href]="project.websiteUrl">
+                  <img ngSrc="/assets/img/project_img/website.gif" alt="Website" width="30" height="30">
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { NewsService } from 'src/app/services/news.service';
-import { News } from 'src/app/models/newsModel';
+import {Component, Input, OnInit} from '@angular/core';
+import {News} from "@models/newsModel";
+import {NewsService} from "@services/news.service";
 
 @Component({
   selector: 'app-slider',
@@ -8,18 +8,19 @@ import { News } from 'src/app/models/newsModel';
   styleUrls: ['./slider.component.css']
 })
 export class SliderComponent implements OnInit {
-  news: News[] = []
-  constructor(private newsService: NewsService) { }
+  @Input() news: News[]
+  // constructor(private newsService: NewsService) { }
 
   ngOnInit(): void {
-    this.getNews();
+    // this.getNews();
   }
   //apiden gelen haberleri getir
-  getNews() {
-    this.newsService.getNews().subscribe((response) => {
-      this.news = response.articles
-
-    })
-  }
+  // getNews() {
+  //   this.newsService.getNews().subscribe((response) => {
+  //     this.news = response.articles
+  //     console.log(this.news)
+  //
+  //   })
+  // }
 
 }

@@ -6,28 +6,33 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SliderComponent } from './components/slider/slider.component';
-import { HeaderComponent } from './components/header/header.component';
-import { NewsComponent } from './components/news/news.component';
-import { CategoryComponent } from './components/category/category.component';
-import { HomepageComponent } from './components/homepage/homepage.component';
-import { NewsDetailComponent } from './components/news-detail/news-detail.component';
-import { FilterPipePipe } from './pipes/filter-pipe.pipe';
-import { AboutComponent } from './components/about/about.component';
 
 import { NgxPaginationModule } from 'ngx-pagination';
+import {SliderComponent} from "@components/slider/slider.component";
+import {NewsComponent} from "@components/news/news.component";
+import {CategoryComponent} from "@components/category/category.component";
+import {HomepageComponent} from "@components/pages/homepage/homepage.component";
+import {NewsDetailComponent} from "@components/pages/news-detail/news-detail.component";
+import {FilterPipePipe} from "@pipes/filter-pipe.pipe";
+import {AboutComponent} from "@components/pages/about/about.component";
+import {NgOptimizedImage} from "@angular/common";
+import {SearchComponent} from "@components/search/search.component";
+import {NewsCardComponent} from "@components/news-card/news-card.component";
+import {NavbarComponent} from "@components/navbar/navbar.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     SliderComponent,
-    HeaderComponent,
+    NavbarComponent,
     NewsComponent,
     CategoryComponent,
     HomepageComponent,
     NewsDetailComponent,
     FilterPipePipe,
     AboutComponent,
+    SearchComponent,
+    NewsCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +40,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     NgbCarouselModule,
     HttpClientModule,
     FormsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    NgOptimizedImage
 
 
   ],
