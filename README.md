@@ -2,8 +2,9 @@
 
 This site is made for [enoca](https://www.enoca.com/).</br>
 YunusPaper is a news aggregator website developed using Angular. It was created for Enoca Company to showcase news articles retrieved from the NewsAPI. The website utilizes the API data to perform various operations and displays news articles on the homepage based on different categories. Pagination functionality is implemented to allow users to navigate through the articles easily.
-
-live server: [Yunus Paper](https://enocachallenge.vercel.app/)
+> **Note**
+>
+> 💡 Don't forget to configure the `environment.ts` file to run the application locally!
 
 ### Table of Contents
 
@@ -13,6 +14,7 @@ live server: [Yunus Paper](https://enocachallenge.vercel.app/)
 - Usage
 - Contributing
 - License
+
 
 ### Introduction
 
@@ -46,6 +48,9 @@ cd YunusPaper
 npm install
 ```
 4. Configure the NewsAPI key in the src/environments/environment.ts file.
+```
+ XApiKey:<YOUR_API_KEY>
+```
 5. Start the development server:
 ```
 ng serve
@@ -62,6 +67,12 @@ Once YunusPaper is up and running, users can access the website to explore and r
 - Search Functionality: Users can use the search feature to find articles related to specific keywords or topics.
 
 For detailed instructions on how to use YunusPaper, please refer to the user documentation provided.
+### Screenshots
+
+| Home                                                   | News Detail                                                  |
+|--------------------------------------------------------|--------------------------------------------------------------|
+| ![Light Mode Screenshot](./src/assets/img/home-ss.png) | ![Dark Mode Screenshot](./src/assets/img/news-detail-ss.png) |
+
 
 ### Contributing
 
@@ -74,4 +85,8 @@ If you would like to contribute code, please follow these steps:
 - Test your changes thoroughly.
 - Submit a pull request detailing the changes you have made.
 
-Thank you for your interest in YunusPaper. If you have any questions or need further assistance, please don't hesitate to contact us.
+## Contact
+
+For any inquiries or questions, please contact erkesikbasyunusemre@gmail.com.
+
+Feel free to explore the project and enjoy using the YunusPaper App!

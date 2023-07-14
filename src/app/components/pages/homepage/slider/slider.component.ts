@@ -8,18 +8,10 @@ import {News} from "@models/newsModel";
 })
 export class SliderComponent implements OnInit {
   @Input() news: News[]
-  // constructor(private newsService: NewsService) { }
 
   ngOnInit(): void {
-    // this.getNews();
   }
-  //apiden gelen haberleri getir
-  // getNews() {
-  //   this.newsService.getNews().subscribe((response) => {
-  //     this.news = response.articles
-  //     console.log(this.news)
-  //
-  //   })
-  // }
-
+  handleImageError(event: any) {
+    event.target.src = '/assets/img/default_news.jpg';
+  }
 }

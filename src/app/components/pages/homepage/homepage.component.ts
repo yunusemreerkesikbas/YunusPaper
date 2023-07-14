@@ -12,7 +12,6 @@ export class HomepageComponent implements OnInit {
 
   news: News[] = []
   topNews: News[] = []
-  filterText: string = "";
   perPage: number = 10
   totalResults: number = 0
   page: number = 1

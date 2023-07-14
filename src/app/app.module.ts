@@ -8,9 +8,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { NgxPaginationModule } from 'ngx-pagination';
-import {SliderComponent} from "@components/slider/slider.component";
-import {NewsComponent} from "@components/news/news.component";
-import {CategoryComponent} from "@components/category/category.component";
+import {SliderComponent} from "@components/pages/homepage/slider/slider.component";
+import {NewsComponent} from "@components/pages/homepage/news/news.component";
+import {CategoryComponent} from "@components/pages/news-detail/category/category.component";
 import {HomepageComponent} from "@components/pages/homepage/homepage.component";
 import {NewsDetailComponent} from "@components/pages/news-detail/news-detail.component";
 import {FilterPipePipe} from "@pipes/filter-pipe.pipe";

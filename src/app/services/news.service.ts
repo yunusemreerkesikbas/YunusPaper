@@ -9,7 +9,6 @@ import {environment} from "@environments/environment";
   providedIn: 'root'
 })
 export class NewsService {
-  isLoading:boolean = false;
   constructor(private httpClient: HttpClient) { }
   // apiden gelen datayı karşıla
   getNews(): Observable<ListResponseModel<News>> {

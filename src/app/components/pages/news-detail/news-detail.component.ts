@@ -12,7 +12,6 @@ import {CategoryService} from "@services/category.service";
 })
 export class NewsDetailComponent implements OnInit {
   news: News[] = []
-  categories: Category[] = []
   uniqueCategory: any = []
   categoryList: Category[] = []
   isLoading = false
@@ -24,7 +23,6 @@ export class NewsDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.getCategories();
-    // tıklanan kategoriye göre haber çekme
     this.activatedRoute.params.subscribe(params => {
       if (params["category"]) {
         this.getNewsByCategory(params["category"])
