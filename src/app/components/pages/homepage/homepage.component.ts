@@ -42,7 +42,6 @@ export class HomepageComponent implements OnInit {
   pageChangeEvent(event: number) {
     this.page = event;
     this.getNewsByPagination();
-    console.log(this.page);
   }
 
 

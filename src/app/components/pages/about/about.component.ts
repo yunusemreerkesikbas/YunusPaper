@@ -14,7 +14,6 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
     this.http.get<any>('/assets/about.json').subscribe(data => {
       this.aboutData = data;
-      console.log(this.aboutData)
     });
   }
 }
